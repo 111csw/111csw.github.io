@@ -1,0 +1,79 @@
+/* style.css */
+h1 {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-size: 5em;
+    width: 2800px;
+}
+
+body {
+    width: 4000px;
+    margin: 0 15px; /* 中心对齐整个页面 */
+}
+
+.container {
+    display: flex;
+    align-items: flex-start; /* 确保大图和文字在顶部对齐 */
+}
+
+.full-img {
+    position: relative;
+    display: block;
+    width: 2500px; /* 修改为实际宽度 */
+    height: 1920px; /* 根据需要调整大图的高度 */
+    margin: 0; /* 确保大图靠左对齐 */
+    overflow: hidden; /* 确保超出部分不会显示 */
+}
+
+.full-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 确保图片填满容器，可能会裁剪图片 */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+button {
+    border: 0;
+    background: rgba(150, 150, 150, 0.6);
+    text-shadow: 15px 15px 15px white;
+    border: 1px solid #999;
+    position: absolute;
+    cursor: pointer;
+    top: 2px;
+    left: 2px;
+    font-size: 3em; /* 调整按钮文字大小 */
+}
+
+.city-info {
+    margin-left: 20px; /* 文字与大图之间的间距 */
+    width: 1200px;
+}
+
+.city-description {
+    font-size: 3em; /* 文字大小 */
+    line-height: 1.2; /* 行高 */
+    color: #333; /* 文字颜色 */
+}
+
+.thumb-bar {
+    clear: both; /* 确保缩略图位于大图下方 */
+    width: 3000px; /* 与大图对齐 */
+    text-align: left; /* 左对齐缩略图 */
+    margin-top: 10px; /* 增加顶部间距 */
+}
+
+.thumb-bar img {
+    display: inline-block;
+    width: 20%; /* 设置缩略图的宽度 */
+    height: 300px; /* 设置缩略图的高度 */
+    margin: 0 5px; /* 增加缩略图之间的间距 */
+    cursor: pointer;
+}
